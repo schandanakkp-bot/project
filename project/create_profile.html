@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<form>
+
+    <div class="profile-container">
+
+        <h2>Create Student Profile</h2>
+
+        <div class="form-group">
+            <label>Profile Photo</label>
+            <input type="file" id="profilePhoto" accept="image/*">
+        </div>
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="studentName"
+                   placeholder="Enter full name">
+        </div>
+
+        <div class="form-group">
+            <label>College Name</label>
+            <input type="text" id="collegeName"
+                   placeholder="Enter college name">
+        </div>
+
+        <div class="form-group">
+            <label>Academic Background</label>
+            <textarea id="background" rows="4"
+                placeholder="Education, internships, projects, experience">
+            </textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Awards & Achievements</label>
+            <textarea id="achievements" rows="3"
+                placeholder="Hackathons, certifications, awards">
+            </textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Skills & Interests</label>
+            <textarea id="skills" rows="3"
+                placeholder="AI, ML, Web Development, Entrepreneurship">
+            </textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="email"
+                   placeholder="student@email.com">
+        </div>
+
+        <button type="button"
+                onclick="createProfile()">
+            Save Profile
+        </button>
+
+    </div>
+
+</form>
+
+<script src="profile.js"></script>
+
+</body>
+</html>

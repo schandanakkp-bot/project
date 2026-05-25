@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+</head>
+<body>
+
+<h1>Student Profile</h1>
+
+<img id="resultPhoto" width="150">
+
+<p><strong>Name:</strong> <span id="resultName"></span></p>
+
+<p><strong>College:</strong> <span id="resultCollege"></span></p>
+
+<p><strong>Academic Background:</strong>
+<span id="resultBackground"></span></p>
+
+<p><strong>Awards & Achievements:</strong>
+<span id="resultAchievements"></span></p>
+
+<p><strong>Skills & Interests:</strong>
+<span id="resultSkills"></span></p>
+
+<p><strong>Email:</strong>
+<span id="resultEmail"></span></p>
+
+<script>
+
+document.getElementById("resultPhoto").src =
+    localStorage.getItem("profilePhoto");
+
+document.getElementById("resultName").textContent =
+    localStorage.getItem("studentName");
+
+document.getElementById("resultCollege").textContent =
+    localStorage.getItem("collegeName");
+
+document.getElementById("resultBackground").textContent =
+    localStorage.getItem("background");
+
+document.getElementById("resultAchievements").textContent =
+    localStorage.getItem("achievements");
+
+document.getElementById("resultSkills").textContent =
+    localStorage.getItem("skills");
+
+document.getElementById("resultEmail").textContent =
+    localStorage.getItem("email");
+
+</script>
+
+</body>
+</html>
